@@ -1,0 +1,10 @@
+<h1>user-profile works!</h1>
+
+<h1>Name : {{name}}</h1>
+<h1>Age : {{age}}</h1>
+<h1>Status : {{status}}</h1>
+
+<button [disabled] = "isButtonDisabled">Submit</button>
+<h2>Input value : {{inputValue}}</h2>
+<!-- <input type="text" [value]="inputValue" (input)="onChange($event)"> -->
+<input type="text" [(ngModel)] = "inputValue">
